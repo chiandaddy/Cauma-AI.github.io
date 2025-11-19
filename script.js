@@ -30,15 +30,19 @@ function mockCaumaResponse(userText) {
 function playIntro() {
     introPlayed = true;
 
-    // Move logo to header
+    // Animate logo shrinking and moving up
     introLogo.style.transform = "translate(-50%, -300%) scale(0.1)";
     
     setTimeout(() => {
         introLogo.style.display = "none";
         header.style.top = "10px";
+
+        // Add a little slide effect for chat
         chatContainer.style.top = "80px";
+        chatContainer.style.opacity = "1";
     }, 800);
 }
+
 
 sendBtn.onclick = () => {
     const text = input.value.trim();
