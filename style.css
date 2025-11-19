@@ -38,12 +38,9 @@ body {
 }
 
 /* Chat UI */
-
-/* Chat UI */
-/* Chat UI */
 #chat-container {
     position: fixed;
-    top: 80px;              /* Start visible instead of off-screen */
+    top: 80px;              /* visible right away */
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -51,9 +48,10 @@ body {
     height: 75vh;
     display: flex;
     flex-direction: column;
-    transition: top 0.8s ease, transform 0.8s ease, opacity 0.8s ease;
-    opacity: 1;             /* Ensure visible */
+    transition: top 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1;             /* ensure visible */
 }
+
 
 
 

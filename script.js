@@ -37,11 +37,12 @@ function playIntro() {
         introLogo.style.display = "none";
         header.style.top = "10px";
 
-        // Add a little slide effect for chat
+        // Add a little slide/fade effect for chat
         chatContainer.style.top = "80px";
         chatContainer.style.opacity = "1";
     }, 800);
 }
+
 
 
 sendBtn.onclick = () => {
