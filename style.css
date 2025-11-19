@@ -39,9 +39,10 @@ body {
 
 /* Chat UI */
 
+/* Chat UI */
 #chat-container {
     position: fixed;
-    top: 100vh;
+    top: 80px;              /* Start visible instead of off-screen */
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -49,8 +50,9 @@ body {
     height: 75vh;
     display: flex;
     flex-direction: column;
-    transition: 0.8s ease;
+    transition: top 0.8s ease, transform 0.8s ease;
 }
+
 
 #messages {
     flex: 1;
